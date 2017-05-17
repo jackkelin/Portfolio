@@ -1,0 +1,75 @@
+// 
+// buttons
+//
+.button {
+	
+	display: inline-block;
+	cursor: pointer;
+	outline: 0;
+	-webkit-appearance: none;
+	background-color: $gold;
+	color: $black;
+	font-family: $mono-font;
+	border: 1px solid $light-gray;
+	padding: 1.2rem 2rem;
+	line-height: 1.25;	
+
+}
+.textbutton {
+
+	display: inline-block;
+	position: relative;
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: $gold;
+	padding-bottom: 0.25rem;
+	margin-bottom: 0.4rem;
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 1px;
+		width: 0;
+		background-color:$gold;
+		transition: width $timing $transition;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
+
+}
+.contact-textbutton {
+	
+	display: inline-block;
+	font-family: $mono-font;
+	font-size: 1.8rem;
+	line-height: 1;
+	padding: 0 0.5rem;
+	position: relative;
+	cursor: pointer;
+	z-index: #{$overlay-z-index + 10};
+	transition: color $transition $timing-fast;
+
+	&--icon {
+    transform: rotate(0);
+		transition: transform $transition $timing-fast;
+		display: inline-block;
+	}
+
+	&.is_open {
+		color: $light-gray;
+		background-color: $gold;
+		@include mq(large) {
+			background-color: transparent;
+		}
+		.contact-textbutton--icon {
+			transform: rotate(135deg);
+			transition: transform $transition $timing-fast;
+		}
+	}
+
+}

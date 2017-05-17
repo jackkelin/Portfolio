@@ -1,0 +1,13 @@
+{{> head }}
+<div style="background-color: #333">
+	<form id="contact" role="form" class="contact-form" method="POST" action="contact.php">
+	  <input type="text" name="fullname" placeholder="name.."> 
+	  <input type="text" name="email" placeholder="email.."> 
+	  <textarea name="comment" id="" cols="30" rows="10" placeholder="comment.."></textarea>
+	  <div class="submit-wrapper">
+	  	<input type="submit" name="submit" value="submit">
+	  </div>
+	</form>
+	<div class="form-messages"></div>
+</div>
+{{> foot }}

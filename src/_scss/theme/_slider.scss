@@ -1,0 +1,74 @@
+.slider {
+
+	&-arrows {
+	  width: 100%;
+    position: relative;
+    display: block;
+	}
+
+	&-arrow {
+    font-size: 1.4rem;
+    color: #333;
+    text-decoration: none;
+    font-family: monospace;
+    padding: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    width: auto;
+    height: $work-pane-height;
+    z-index: 30;
+    @include max-screen(tablet_portrait) {
+	    height: $work-pane-tablet-height;
+    }
+    @include max-screen(medium) {
+	    height: auto;
+    }
+		@include mq(medium) {
+	    bottom: 0;
+	    vertical-align: middle;
+	    display: flex;
+			color: $white;
+			align-items: center;
+			padding: 2rem;
+		}
+	}
+	&-arrow--prev { left: 0; }
+	&-arrow--next { right: 0; }
+	&-dots {
+		position: relative;
+		top: 100%;
+		width: 100%;
+		z-index: 20;
+	}
+	&--content {}
+
+	&--content-item {}
+	
+}
+
+// Slick slider
+.slick-slider {
+	padding: 0;
+	margin: 0;
+}
+.slick-slide {
+	outline: 0;
+}
+.slick-dots li {
+	@include max-screen(small) {
+		margin: 0;
+	}
+}
+.slick-dots li button:before {
+	opacity: .10;
+	color: $black;
+	font-size: 1.5rem;
+	@include mq(small) {
+		font-size: 2rem;
+	}
+}
+.slick-dots li.slick-active button:before {
+	opacity: .90;
+	color: $black;
+}
+

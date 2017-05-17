@@ -1,0 +1,16 @@
+.footer {
+	display: flex;
+	flex-flow: row-wrap;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	&__col {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 2.4rem;
+	}
+}
+.logo {
+	width: 7.5rem;
+	height: 7.5rem;
+}

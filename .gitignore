@@ -1,0 +1,5 @@
+# Ignore .DS_Store files
+.DS_Store
+
+# Igore build file
+node_modules/

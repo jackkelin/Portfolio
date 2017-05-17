@@ -1,0 +1,60 @@
+//
+/// Font
+//
+
+$sans-font: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+$mono-font: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+
+//
+/// Colors
+//
+
+$black: #333;
+$charcoal: #242424;
+
+$white: #fff;
+$lightest-gray: #f9f9f9;
+$light-gray: #eee;
+$gray: #666;
+
+$gold: #D7AE14;
+
+
+//
+/// Container Units
+//
+
+$max-width: 90rem;
+$outer-max-width: 100rem;
+$gutter: 2rem;
+
+//
+/// Global Units
+//
+$work-pane-height: 80vh;
+$work-pane-tablet-height: 50vh;
+$overlay-z-index: 50;
+
+//
+/// Transitions
+//
+
+$timing: 300ms;
+$timing-fast: 200ms;
+$timing-slow: 500ms;
+$transition: ease-in-out;
+
+//
+/// Breakpoints
+//
+
+$breakpoints: (
+  xsmall: 320px,
+  small: 480px,
+  medium: 600px,
+  tablet: 768px,
+  tablet_portrait: 1024px,
+  large: 1200px,
+  xlarge: 1400px,
+  xxlarge: 2100px
+);

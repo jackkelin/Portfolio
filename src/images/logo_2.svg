@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #222;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #eee;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: #d7ae14;
+      }
+    </style>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <circle class="cls-1" cx="150" cy="150" r="150"/>
+    <g id="J">
+      <rect class="cls-2" x="110" y="56" width="60" height="8"/>
+      <rect class="cls-2" x="137" y="70" width="9" height="175"/>
+      <path class="cls-3" d="M327.473,417.816l70.711,70.711-5.657,5.657-70.711-70.711Z" transform="translate(-256 -250)"/>
+      <rect class="cls-4" x="152" y="134" width="75" height="8"/>
+      <rect class="cls-4" x="226" y="70" width="8" height="174"/>
+    </g>
+  </g>
+</svg>

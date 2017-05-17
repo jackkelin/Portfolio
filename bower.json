@@ -1,0 +1,25 @@
+{
+  "name": "Jackie Portfolio",
+  "description": "Jackie Herrera Front-End Developer",
+  "main": "",
+  "authors": [
+    "Jackie Herrera"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jackkelin/jackelin",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "normalize-css": "^6.0.0"
+  },
+  "devDependencies": {
+    "slick-carousel": "^1.6.0",
+    "normalize-css": "^6.0.0"
+  }
+}

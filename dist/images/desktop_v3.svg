@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<svg width="355px" height="258px" viewBox="0 0 355 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0,7.00833772 C0,3.69002443 2.68723239,0.992240692 5.99284073,0.98269584 L340.330856,0.0173041602 C343.640611,0.0077473364 346.323697,2.6828676 346.323697,6.00863743 L346.323697,206.181519 C346.323697,209.499998 343.636465,212.190157 340.330856,212.190157 L5.99284073,212.190157 C2.68308619,212.190157 0,209.500721 0,206.181819 L0,7.00833772 Z" id="path-1"></path>
+        <filter x="-2.3%" y="-1.9%" width="104.6%" height="107.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="12" y="12" width="324" height="187"></rect>
+        <pattern id="img1" patternUnits="userSpaceOnUse" width="346" height="1249" viewbox="0 0 200 300">
+          <image id="image-desktop" xlink:href="http://localhost:3000/images/cascade_desktop.png" x="12" y="12" width="346" height="1249" />
+        </pattern>
+    </defs>
+    <g id="Desktop">
+        <polygon id="monitor_base2" fill="#FFFFFF" points="144 201 201 201 210 258 135 258"></polygon>
+        <path d="M83,253 C83,250.238576 85.2432833,248 88.0020972,248 L257.997903,248 C260.760485,248 263,250.244195 263,253 L263,258 L83,258 L83,253 Z" id="monitor_base1" fill="#FFFFFF"></path>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="monitor_head">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+        <g id="desktop_mask">
+            <!-- <rect fill="#D8D8D8" stroke="#979797" stroke-width="1" x="12.5" y="12.5" width="323" height="186"></rect> -->
+            <use fill="url(#img1)" stroke="#e0e0e0" stroke-width="1" fill-rule="evenodd" xlink:href="#path-4"></use>
+        </g>
+    </g>
+</svg>
+
+
+</body>
+</html>

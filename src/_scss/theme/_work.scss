@@ -1,0 +1,111 @@
+.work-pane {
+	
+	position: relative;
+	width: 100%;
+	height: $work-pane-height;
+	margin-top: 2rem;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	transition: all $timing linear;
+	@include mq(tablet) {
+		margin-top: 6rem;
+	}
+  @include max-screen(tablet_portrait) {
+    height: $work-pane-tablet-height;
+  }
+	@include max-screen(medium) {
+		height: auto;
+		padding: 2rem 1rem;
+	}
+
+	&--inner {
+		position: relative;
+		display: inline-block;
+		text-align: center;		
+	}
+}
+
+.work {
+
+	&--inner {
+		display: flex;		
+		justify-content: space-between;
+		flex-direction: column;
+		@include mq(medium) {
+			flex-direction: row;
+		}
+	}
+
+	&--desc {
+		order: 2;
+		@include mq(medium) {
+			order: 1;
+			width: 60%;
+		}
+	}
+
+	&--info {
+		order: 1;
+		@include mq(medium) {
+			order: 2;
+			width: 40%;
+			padding-left: 5%;
+		}
+	}
+
+	&--info-text {
+		font-size: 1.1rem;
+		line-height: 1.25;
+		color: $gray;
+		margin-bottom: 0.6rem;
+	}
+}
+
+.work-svg {
+	display: inline-block;
+	visibility: hidden;
+	@include mq(tablet_portrait) {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	&--desktop {
+		@include max-screen(medium) {
+			width: 100%;
+			height:auto;
+		}
+	}
+
+	&--tablet {
+		margin-bottom: -1rem;
+		@include max-screen(tablet_portrait) {
+			margin-left: -25%;
+		}
+		@include max-screen(medium) {
+			margin-left: 0;
+			position: absolute;
+			left: 40%;
+	    bottom: 0;
+			width: 50%;
+			height:auto;
+		}
+	}
+
+	&--mobile {
+		margin-bottom: -1rem;
+		@include max-screen(tablet_portrait) {
+			margin-left: -10%;
+		}
+		@include max-screen(medium) {
+			margin-left: 0;
+			position: absolute;
+			left: 70%;
+	    bottom: 0;
+			width: 30%;
+			height: auto;
+		}
+	}
+}

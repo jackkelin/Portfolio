@@ -1,0 +1,35 @@
+// Form 
+form.contact-form {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+input[type="text"] {
+	width: 100%;
+	@include mq(medium) {
+		width: 48.5%;	
+	}
+}
+textarea {
+	width: 100%;
+}
+input[type="text"],
+textarea {
+	border: 1px solid $light-gray;
+	background: transparent;
+	color: $light-gray;
+	font-family: $mono-font;
+	padding: 1rem 1.6rem;
+	margin-bottom: 3%;
+	@include placeholder {
+		color: $light-gray;
+		font-family: $mono-font;
+	}
+}
+.submit-wrapper {
+	width: 100%;
+	text-align: right;
+	@include mq(medium) {
+		text-align: left;
+	}
+}

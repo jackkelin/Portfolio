@@ -1,0 +1,21 @@
+%sans-font-light {
+	font-family: $sans-font;
+	font-weight: 300;
+}
+%sans-font-regular {
+	font-family: $sans-font;
+	font-weight: 400;
+}
+%sans-font-bold {
+	font-family: $sans-font;
+	font-weight: 600;
+}
+
+// state classes
+.is_fixed {
+	position: fixed;
+}
+
+.text-center {
+	text-align: center;
+}

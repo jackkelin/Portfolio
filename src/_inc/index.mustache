@@ -1,0 +1,47 @@
+{{> head }}
+<div class="l-header">
+  <div class="contact-textbutton js_contact_button">    
+    <span class="contact-textbutton--icon">+</span> | 
+    <span class="contact-textbutton--text"> Jackelin Herrera</span>
+  </div>
+</div>
+
+<main class="l-main" role="main">
+  <div class="work-pane" data-pane="0" style="">
+    <div class="work-pane--inner">
+      {{> svgDesktop }}
+      {{> svgTablet }}
+      {{> svgMobile }}
+    </div>
+  </div>
+  <div class="slider-arrows">
+    <a href="#" class="slider-arrow slider-arrow--prev"><<</a>
+    <a href="#" class="slider-arrow slider-arrow--next">>></a>
+  </div>
+  <div class="slider-dots"></div>
+  <div class="slider">
+    <ul class="slider--content js_bottom_slider">
+      {{#work}}
+      <li class="slider--content-item work"
+        data-hex="{{company_color}}"
+        data-index="{{index}}">
+        <h2>{{name}}</h2>
+        <div class="work--inner">
+          <div class="work--desc">
+            <p class="work--desc-text">{{description}}</p>
+          </div>
+          <div class="work--info">
+            <p class="work--info-text"><span>{{date}}</span> | <span>{{agency}}</span></p>
+            <p class="work--info-text">Role: {{role}}</p>
+            <p class="work--info-text">Build Tools: {{build_tools}}</p>
+            <p class="work--info-text"><a class="textbutton" href="{{url}}" target="_blank">Visit Site</a></p>
+          </div>
+        </div>
+      </li>
+      {{/work}}
+    </ul>
+  </div>
+</main>
+
+{{> overlay}}
+{{> foot }}

@@ -1,0 +1,70 @@
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.preloader {
+	&-icon {
+		display: block;
+		position: relative;
+		left: 50%;
+		top: 50%;
+		width: 150px;
+		height: 150px;
+		margin: -75px 0 0 -75px;
+		border-radius: 50%;
+		border: 3px solid transparent;
+		border-top-color: $gold;
+		animation: spin 1.7s linear infinite;
+		z-index: 11;
+		
+		&:before {
+		  content: "";
+		  position: absolute;
+		  top: 5px;
+		  left: 5px;
+		  right: 5px;
+		  bottom: 5px;
+		  border-radius: 50%;
+		  border: 3px solid transparent;
+		  border-top-color: $charcoal;
+		  animation: spin-reverse .6s linear infinite;
+		}
+		
+		&:after {
+		  content: "";
+		  position: absolute;
+		  top: 15px;
+		  left: 15px;
+		  right: 15px;
+		  bottom: 15px;
+		  border-radius: 50%;
+		  border: 3px solid transparent;
+		  border-top-color: $gray;
+		  animation: spin 1s linear infinite;
+		}
+	}	
+	&.is_loaded {
+		opacity: 0;
+		visibility: hidden;
+		transition: all 300ms ease-in-out;
+	}
+}
+.no-js {
+	.preloader {
+		display: none!important;
+	}
+}

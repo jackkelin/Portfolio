@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="633" height="397" viewBox="0 0 633 397">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #222;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #d7ae14;
+      }
+    </style>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <g id="J">
+      <rect class="cls-1" x="232" width="200" height="15"/>
+      <rect class="cls-1" x="327" y="47" width="15" height="350"/>
+      <path class="cls-2" d="M302.27,469.164L408.336,575.23,397.73,585.836,291.664,479.77Z" transform="translate(-72 -190)"/>
+    </g>
+    <g id="Brackets_-_Left" data-name="Brackets - Left">
+      <path class="cls-3" d="M71.986,395.907L213.407,254.486l10.607,10.607L82.593,406.514Z" transform="translate(-72 -190)"/>
+      <path id="Rectangle_4_copy" data-name="Rectangle 4 copy" class="cls-3" d="M82.593,370.986L224.014,512.407l-10.607,10.607L71.986,381.593Z" transform="translate(-72 -190)"/>
+    </g>
+    <g id="Brackets_-_Left_copy" data-name="Brackets - Left copy">
+      <path class="cls-3" d="M705.014,381.856L563.593,523.014l-10.607-10.587L694.407,371.269Z" transform="translate(-72 -190)"/>
+      <path id="Rectangle_4_copy-2" data-name="Rectangle 4 copy" class="cls-3" d="M694.407,406.731L552.986,265.573l10.607-10.587L705.014,396.144Z" transform="translate(-72 -190)"/>
+    </g>
+  </g>
+</svg>

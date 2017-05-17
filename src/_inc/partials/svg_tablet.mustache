@@ -1,0 +1,34 @@
+<svg class="work-svg work-svg--tablet" width="159px" height="209px" viewBox="0 0 159 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="tab-path-1" x="0" y="0" width="151" height="201" rx="4"></rect>
+        <filter x="-5.0%" y="-2.2%" width="109.9%" height="107.5%" filterUnits="objectBoundingBox" id="tab-filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.202360734 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="tab-path-3" x="0.104090074" y="0.0711817479" width="139.203125" height="180.585938"></rect>
+    </defs>
+    <g id="tab-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tab-Tablet" transform="translate(4.000000, 1.000000)">
+            <g>
+                <g id="tab-tablet_device">
+                    <use fill="black" fill-opacity="1" filter="url(#tab-filter-2)" xlink:href="#tab-path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#tab-path-1"></use>
+                </g>
+                <g id="tab-cascade_tablet" transform="translate(6.187577, 6.210068)">
+                    <mask id="tab-mask-4" fill="white">
+                        <use xlink:href="#tab-path-3"></use>
+                    </mask>
+                    <g id="tab-Mask">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#tab-path-3"></use>
+                        <rect stroke="#C7C7C7" stroke-width="1" x="-0.395909926" y="-0.428818252" width="140.203125" height="181.585938"></rect>
+                    </g>
+                    {{#work}}
+                    <image data-index="{{index}}" stroke="none" fill="none" mask="url(#tab-mask-4)" x="0" y="0" width="140.203125" height="181.585938" xlink:href="/images/work/{{tablet_img}}"></image>
+                    {{/work}} 
+                </g>
+                <ellipse id="tab-tablet_button" stroke="#979797" fill="#9B9B9B" cx="75.8236044" cy="193.860744" rx="2.54419263" ry="2.53067643"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
