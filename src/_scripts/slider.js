@@ -11,7 +11,7 @@
 			nextArrow: $('.slider-arrow--next'),
 			dots: true,
 			appendDots: $('.slider-dots'),
-			draggable: false, 
+			draggable: false,
 			fade: true,
 			speed: 700,
 		});
@@ -29,11 +29,11 @@
 			// Reset
 			$(svg_image).animate({
 				'opacity': '0',
-			}, 200);
+			}, 300);
 			// Active
 			$(active_image).animate({
 				'opacity': '1',
-			}, 200);
+			}, 300);
 			// Change Color
 			$('.work-pane').css('background-color', active_hex);
 		}

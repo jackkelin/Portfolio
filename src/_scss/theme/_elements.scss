@@ -12,20 +12,21 @@
   }
 }
 html {
-	margin: 0; 
+	margin: 0;
 	padding: 0;
 	font-size: 10px;
 	line-height: 1.5;
 }
 body {
-	margin: 0; 
+	margin: 0;
 	padding: 0;
 	font-family: $sans-font;
 	width: 100%;
 	color: $black;
+  word-break: break-word;
 }
 body.preloading {
-	overflow: fixed;
+	position: fixed;
 }
 p {
 	font-size: 1.3rem;
@@ -33,7 +34,7 @@ p {
 	margin-bottom: 1rem;
 }
 
-// Headings 
+// Headings
 h1 {}
 h2 {
 	font-size: 1.6rem;

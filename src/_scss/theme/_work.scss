@@ -1,5 +1,5 @@
 .work-pane {
-	
+
 	position: relative;
 	width: 100%;
 	height: $work-pane-height;
@@ -24,14 +24,14 @@
 	&--inner {
 		position: relative;
 		display: inline-block;
-		text-align: center;		
+		text-align: center;
 	}
 }
 
 .work {
 
 	&--inner {
-		display: flex;		
+		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
 		@include mq(medium) {
@@ -81,6 +81,9 @@
 
 	&--tablet {
 		margin-bottom: -1rem;
+    @include max-screen(small) {
+      margin-bottom: 0;
+    }
 		@include max-screen(tablet_portrait) {
 			margin-left: -25%;
 		}
@@ -96,6 +99,9 @@
 
 	&--mobile {
 		margin-bottom: -1rem;
+    @include max-screen(small) {
+      margin-bottom: 0;
+    }
 		@include max-screen(tablet_portrait) {
 			margin-left: -10%;
 		}
