@@ -63,15 +63,6 @@ gulp.task('js', function () {
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest(Paths.app + 'js'));
 });
-gulp.task('vendor_js', function () {
-  return gulp.src([
-    'bower_components/jquery/dist/jquery.min.js',
-    'bower_components/slick-carousel/slick/slick.min.js'
-  ])
-  .pipe(jshint.reporter('default'))
-  .pipe(concat('vendor.js'))
-  .pipe(gulp.dest(Paths.app + 'js'));
-});
 gulp.task('modernizr', function() {
   return gulp.src(Paths.src + '_scss/**/*')
     .pipe(modernizr({
@@ -93,7 +84,16 @@ gulp.task('modernizr', function() {
         'hidden'
       ]
     }))
-    .pipe(gulp.dest(Paths.app + 'js/'))
+    .pipe(gulp.dest(Paths.src + '_scripts/'))
+});
+gulp.task('vendor_js', function () {
+  return gulp.src([
+    'bower_components/jquery/dist/jquery.min.js',
+    'bower_components/slick-carousel/slick/slick.min.js'
+  ])
+  .pipe(jshint.reporter('default'))
+  .pipe(concat('vendor.js'))
+  .pipe(gulp.dest(Paths.app + 'js'));
 });
 //----------------------- HTML template
 gulp.task('mustache', function () {
