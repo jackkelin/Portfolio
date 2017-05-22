@@ -19,11 +19,17 @@
 		overflow-y: scroll;
 		padding-top: 6rem;
 		padding-bottom: 3rem;
-		@include mq(large) {
-
-		}
+    &::-webkit-scrollbar {
+        width: 1.2rem;
+    }
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 0.75rem rgba(148, 148, 148,0.5);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $light-gray;
+      outline: 1px solid $charcoal;
+    }
 	}
-
 	&.is_open {
 		transform: translateY(0);
 		.overlay--inner {

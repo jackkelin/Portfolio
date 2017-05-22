@@ -1702,13 +1702,13 @@ This test will also return `true` for Firefox 4 Multitouch support.
     var $svg_mobile = $('.work-svg--mobile');
     setTimeout(function(){
       $svg_desktop.addClass('animate-slideUp');
-    },400);
+    },200);
     setTimeout(function(){
       $svg_tablet.addClass('animate-slideUp');
-    },1000);
+    },700);
     setTimeout(function(){
       $svg_mobile.addClass('animate-slideUp');
-    },1400);
+    },1200);
   }
   $(window).on('load', function(){
     setTimeout(function(){

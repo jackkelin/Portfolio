@@ -1,5 +1,5 @@
 // Define
-var gulp        	= require('gulp'),
+var gulp        = require('gulp'),
 	browserSync 	= require('browser-sync'),
 	concat      	= require('gulp-concat'),
 	uglify      	= require('gulp-uglify'),
