@@ -25,6 +25,7 @@
 		position: relative;
 		display: inline-block;
 		text-align: center;
+    overflow: hidden;
 	}
 }
 
@@ -66,7 +67,14 @@
 
 .work-svg {
 	display: inline-block;
-	visibility: hidden;
+	transform: translateY(101%);
+  opacity: 0;
+  transition: all 900ms ease-in-out;
+  &.is_visible {
+      transform: translateY(0);
+      opacity: 1;
+      transition: all 900ms ease-in-out;
+  }
 	@include mq(tablet_portrait) {
 		margin-left: 1rem;
 		margin-right: 1rem;

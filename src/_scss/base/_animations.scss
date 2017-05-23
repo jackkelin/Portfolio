@@ -16,9 +16,8 @@
 }
 
 .animate-slideUp {
-  animation-name: slideInUp;
-  animation-duration: 800ms;
-  animation-fill-mode: forwards;
+  tranform: translateY(0);
+  opacity: 1;
 }
 
 @keyframes fade_slide_up {
