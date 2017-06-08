@@ -30,6 +30,13 @@
 		border-top-color: $gold;
 		animation: spin 1.7s linear infinite;
 		z-index: 11;
+		opacity: 0;
+		transform: opacity 300ms ease-in-out;
+
+		&.is_visible {
+			opacity: 1;
+			
+		}
 		
 		&:before {
 		  content: "";
@@ -60,7 +67,7 @@
 	&.is_loaded {
 		opacity: 0;
 		visibility: hidden;
-		transition: all 300ms ease-in-out;
+		transition: all 500ms ease-in-out;
 	}
 }
 .no-js {

@@ -37,11 +37,14 @@ p {
 // Headings
 h1 {}
 h2 {
-	font-size: 1.6rem;
+	color: $charcoal;
+	font-size: 1.4rem;
 	line-height: 1.25;
 	margin-top: 5.2rem;
 	margin-bottom: 1rem;
 	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 h3 {
 	color: $gold;
