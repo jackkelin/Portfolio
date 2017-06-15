@@ -9,12 +9,12 @@
   $(window).on('load', function(){
     setTimeout(function(){
       $('.preloader-icon').removeClass('is_visible');
-    }, 300);
+    }, 500);
     setTimeout(function(){
-      $('body').removeClass('preloading');      
+      $('body').removeClass('preloading');
       $('.preloader').addClass('is_loaded');
 
-    },500);
+    },900);
     init_slide_up();
   });
 
