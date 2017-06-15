@@ -1,5 +1,5 @@
 @keyframes spin {
-  0% { 
+  0% {
     transform: rotate(0deg);
   }
   100% {
@@ -8,7 +8,7 @@
 }
 
 @keyframes spin-reverse {
-  0% { 
+  0% {
     transform: rotate(0deg);
   }
   100% {
@@ -31,13 +31,13 @@
 		animation: spin 1.7s linear infinite;
 		z-index: 11;
 		opacity: 0;
-		transform: opacity 300ms ease-in-out;
+		transform: opacity 500ms ease-in-out;
 
 		&.is_visible {
 			opacity: 1;
-			
+
 		}
-		
+
 		&:before {
 		  content: "";
 		  position: absolute;
@@ -50,7 +50,7 @@
 		  border-top-color: $charcoal;
 		  animation: spin-reverse .6s linear infinite;
 		}
-		
+
 		&:after {
 		  content: "";
 		  position: absolute;
@@ -63,7 +63,7 @@
 		  border-top-color: $gray;
 		  animation: spin 1s linear infinite;
 		}
-	}	
+	}
 	&.is_loaded {
 		opacity: 0;
 		visibility: hidden;

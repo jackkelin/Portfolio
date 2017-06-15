@@ -1704,15 +1704,25 @@ This test will also return `true` for Firefox 4 Multitouch support.
     $('.preloader-icon').addClass('is_visible');
   });
   $(window).on('load', function(){
-    setTimeout(function(){
-      $('.preloader-icon').removeClass('is_visible');
-    }, 500);
-    setTimeout(function(){
-      $('body').removeClass('preloading');
-      $('.preloader').addClass('is_loaded');
+    // $('.preloader-icon').removeClass('is_visible');
+    // $('body').removeClass('preloading');
+    // $('.preloader').addClass('is_loaded');
 
-    },900);
+    // setTimeout(function(){
+
+    // }, 500);
+    // setTimeout(function(){
+    //   $('body').removeClass('preloading');
+    //   $('.preloader').addClass('is_loaded');
+
+    // },900);
+    setTimeout(function(){
+    $('.preloader-icon').removeClass('is_visible');
+    $('body').removeClass('preloading');
+    $('.preloader').addClass('is_loaded');
     init_slide_up();
+    },1500);
+
   });
 
 })(jQuery);
